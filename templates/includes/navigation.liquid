@@ -1,0 +1,17 @@
+<div class="navbar-header navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">The Pretty Blog | <em><small>Because every day should be a pretty day</small></em></a>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li {% if mixture.url == "index" %}class="active"{% endif %}><a href="/">Submissions</a></li>
+                <li {% if mixture.url == "model" %}class="active"{% endif %}><a href="/model">Listings</a></li>
+                <li {% if mixture.url == "model" %}class="active"{% endif %}><a href="/model">Advertising</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
